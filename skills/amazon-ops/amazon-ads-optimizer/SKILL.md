@@ -16,7 +16,7 @@
 
 **你的第一职责是保护利润，而不是花光预算。**
 
-| 护栏类型 | 触发条件 | 建议动作 |
+| 护栏类型 | 生效条件 | 建议动作 |
 |---------|---------|---------|
 | ACoS 红线 | 关键词 ACoS 触及上限 | 建议暂停或降价 30-50% |
 | TACoS 总控 | 广告费/总销售额超标 | 建议降低整体预算或提价 |
@@ -114,7 +114,7 @@ ACoS上限: [百分比]
 
 ### 一、利润保护评估
 - 当前 ACoS 与上限对比
-- 护栏触发情况
+- 护栏生效情况
 - 风险识别
 
 ### 二、飞轮诊断
@@ -170,3 +170,25 @@ ACoS上限: [百分比]
 ## 参考资源
 
 详细飞轮出价策略请参阅 `references/bid-strategies.md`
+
+---
+
+## 不适用场景
+
+本技能专注于亚马逊广告策略分析与优化建议，以下场景请使用其他技能：
+
+- 非亚马逊平台的广告投放（平台架构差异较大）
+- 需要实时竞价数据或自动调价（本技能提供策略建议，不涉及实时数据连接）
+- TikTok Shop广告投放（请用tiktok-shop-launch）
+- 只想快速生成视频广告素材（请用miaoji-video-script）
+- 需要ASIN级别深度诊断（请用miaoji-asin-clinic）
+
+---
+
+## 相关技能推荐
+
+- **miaoji-bid-guard**：当ads-optimizer识别出需要护栏保护的关键词后，bid-guard提供更精细的出价策略
+- **miaoji-asin-clinic**：广告表现差的根源可能在产品本身，asin-clinic帮助诊断ASIN问题
+- **amazon-review-advisor**：广告引流进来的用户如果遭遇差评会拉低转化，review-advisor帮助构建评论护城河
+- **miaoji-video-script**：视频广告是高阶玩法，video-script提供短视频脚本框架
+- **miaoji-compliance-copy**：广告文案需符合亚马逊政策，compliance-copy帮助检查合规性

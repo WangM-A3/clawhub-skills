@@ -108,3 +108,24 @@
 ## 技术说明
 
 本技能基于亚马逊A+内容的行业最佳实践和模块模板库生成内容。用户手动输入产品信息，技能辅助生成符合亚马逊规范的A+内容方案。
+
+---
+
+## 不适用场景
+
+本技能专注于亚马逊A+内容方案生成，以下场景请使用其他技能：
+
+- 基础Listing文案优化（请用amazon-listing-doctor）
+- Rufus对话场景优化（请用amazon-rufus-optimizer）
+- 需要实际设计稿或图片（请用miaoji-scene-studio或miaoji-model-shot）
+- 非亚马逊平台的图文内容（各平台内容规范差异较大）
+- A+合规性检查（请用miaoji-compliance-copy）
+
+---
+
+## 相关技能推荐
+
+- **amazon-listing-doctor**：A+是五点描述的视觉延伸，先用listing-doctor优化好基础文案
+- **amazon-rufus-optimizer**：A+模块设计融入场景化内容，能同时提升Rufus可见度
+- **miaoji-scene-studio**：A+需要高质量场景图，scene-studio提供场景创意参考
+- **miaoji-model-shot**：A+人物场景图能大幅提升转化，model-shot提供模特图创意

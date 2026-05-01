@@ -186,3 +186,23 @@ Best regards,
 - 想优化产品，但不确定从哪里入手
 - 需要给团队提供具体改进方向
 - 想制定系统化的评论管理SOP
+
+---
+
+## 不适用场景
+
+本技能专注于亚马逊评论分析与应对建议，以下场景请使用其他技能：
+
+- 需要批量自动联系买家（合规要求仅使用官方索评功能，不涉及主动联系买家）
+- 广告出价优化与ACoS控制（请用amazon-ads-optimizer或miaoji-bid-guard）
+- 差评预防性优化Listing（请用amazon-listing-doctor）
+- 非亚马逊平台的评论管理（各平台评论机制和政策不同）
+
+---
+
+## 相关技能推荐
+
+- **miaoji-bid-guard**：差评多往往导致广告ACoS飙升，bid-guard帮助在广告层面做护栏保护
+- **amazon-listing-doctor**：差评暴露的痛点需要在Listing中针对性防御
+- **miaoji-compliance-copy**：差评中常反映"描述不符"问题，compliance-copy帮助检查文案是否夸大或误导
+- **miaoji-asin-clinic**：评论中反映的产品问题可能是ASIN定位问题，asin-clinic帮助审视产品改进方向

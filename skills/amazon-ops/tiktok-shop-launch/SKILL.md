@@ -64,3 +64,23 @@
 - 建议分析TikTok Ads平台规则获取最新投放政策
 - 内容创作需符合平台内容规范
 - 跨境电商需关注目标市场的税务和海关要求
+
+---
+
+## 不适用场景
+
+本技能专注于TikTok Shop跨境出海策略，以下场景请使用其他技能：
+
+- 亚马逊Listing优化（请用amazon-listing-doctor或amazon-ads-optimizer）
+- 实际视频剪辑制作（请用miaoji-video-script配合视频工具）
+- 亚马逊A+内容设计（请用amazon-aplus-generator）
+- 合规性文案检查（请用miaoji-compliance-copy）
+
+---
+
+## 相关技能推荐
+
+- **miaoji-video-script**：TikTok Shop核心靠短视频种草，video-script提供短视频脚本框架
+- **miaoji-scene-studio**：TikTok用户对场景化内容敏感，scene-studio提供场景创意灵感
+- **miaoji-model-shot**：TikTok达人/模特出镜能大幅提升转化，model-shot提供模特图创意参考
+- **miaoji-compliance-copy**：跨境电商涉及多国法规，compliance-copy帮助检查内容合规性

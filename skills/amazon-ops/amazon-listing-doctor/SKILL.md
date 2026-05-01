@@ -237,3 +237,25 @@ Rufus是亚马逊的AI购物助手，它不像传统搜索引擎那样分析关�
 - [ ] clawhub.yaml配置正确
 - [ ] README.md简洁明了
 - [ ] references/下仅一个场景词参考文件
+
+---
+
+## 不适用场景
+
+本技能专注于亚马逊Listing全方位诊断与优化建议，以下场景请使用其他技能：
+
+- 亚马逊以外的电商平台Listing（各平台算法和用户行为差异较大）
+- 广告活动架构与出价优化（请用amazon-ads-optimizer）
+- 差评应对与评论管理（请用amazon-review-advisor）
+- A+视觉模块设计（请用amazon-aplus-generator）
+- 合规性文案检查（请用miaoji-compliance-copy）
+
+---
+
+## 相关技能推荐
+
+- **amazon-rufus-optimizer**：listing-doctor的5维诊断包含Rufus适配度，rufus-optimizer可做更深入的意图标签分析
+- **amazon-aplus-generator**：listing-doctor的视觉建议可落地为完整A+内容方案
+- **amazon-ads-optimizer**：Listing优化到位后配合广告策略才能最大化流量转化
+- **miaoji-compliance-copy**：Listing文案需符合亚马逊政策，compliance-copy帮助检查合规性
+- **miaoji-asin-clinic**：listing-doctor侧重文案层面，asin-clinic更侧重产品定位和市场竞争力分析

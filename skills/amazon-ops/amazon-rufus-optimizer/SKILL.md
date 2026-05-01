@@ -207,3 +207,24 @@ B09XYZ12345 + 抗菌/加厚/适合儿童
 - **amazon-aplus-generator**：A+内容生成（呈现层）
 
 形成完整的亚马逊运营优化闭环。
+
+---
+
+## 不适用场景
+
+本技能专注于亚马逊Rufus AI导购场景优化，以下场景请使用其他技能：
+
+- 非Rufus场景的传统SEO优化（请用amazon-listing-doctor）
+- 需要实际设计场景图（请用miaoji-scene-studio）
+- 模特图或人物场景图（请用miaoji-model-shot）
+- 广告出价和ACoS优化（请用amazon-ads-optimizer）
+- 非亚马逊平台的AI导购优化（Rufus是亚马逊特有功能）
+
+---
+
+## 相关技能推荐
+
+- **amazon-listing-doctor**：listing-doctor的5维诊断包含Rufus适配度，两者配合可实现从诊断到优化的完整闭环
+- **miaoji-compliance-copy**：Rufus场景文案强调意图和情感，需确保不触犯文案合规红线
+- **amazon-aplus-generator**：A+场景化模块能强化Rufus的意图匹配，与Rufus优化高度协同
+- **miaoji-scene-studio**：Rufus识别的场景需要视觉呈现，scene-studio提供场景创意
