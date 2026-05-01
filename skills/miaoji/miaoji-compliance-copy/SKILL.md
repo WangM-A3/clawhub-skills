@@ -39,7 +39,7 @@
 ```
 
 ### Step 2: 智能分析
-技能自动执行：
+技能自动处理：
 1. 违规词扫描 → 生成问题词列表
 2. Rufus适配度评估 → 识别缺失要素
 3. 场景词注入建议 → 推荐场景标签
@@ -93,3 +93,10 @@
 - 现有Listing优化
 - 合规性自查
 - Rufus搜索排名提升
+
+
+## 相关技能推荐
+
+- **amazon-listing-doctor**：先诊断Listing问题再改写，效率更高
+- **amazon-rufus-optimizer**：Rufus搜索适配的专业优化工具
+- **miaoji-asin-clinic**：一站式体检，定位所有Listing问题

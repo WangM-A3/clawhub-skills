@@ -3,7 +3,7 @@
 > Production-ready AI agent skills for Amazon sellers, TikTok merchants, and cross-border businesses. All ClawScan Benign ✅
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Skills](https://img.shields.io/badge/skills-17-brightgreen)
+![Skills](https://img.shields.io/badge/skills-18-brightgreen)
 ![Status](https://img.shields.io/badge/status-ClawScan%20Benign-✅-green)
 
 ## 🚀 Quick Start
@@ -35,15 +35,16 @@ cd clawhub-skills
 | `amazon-ops-agents` | 1.1.8 | Comprehensive Amazon operations automation suite | `clawhub install amazon-ops-agents` |
 | `tiktok-shop-launch` | 1.0.0 | Launch and optimize TikTok Shop presence | `clawhub install tiktok-shop-launch` |
 
-### ⚡ Miaoji Toolkit (5 skills)
+### ⚡ Miaoji Toolkit (6 skills)
 
 | Skill | Version | Description | Install |
 |-------|---------|-------------|---------|
-| `miaoji-compliance-copy` | 1.0.0 | Generate compliant product descriptions for cross-border | `clawhub install miaoji-compliance-copy` |
-| `miaoji-scene-studio` | 1.0.0 | Create lifestyle product photography scenes | `clawhub install miaoji-scene-studio` |
-| `miaoji-video-script` | 1.0.0 | Generate viral TikTok/Reels video scripts | `clawhub install miaoji-video-script` |
-| `miaoji-model-shot` | 1.0.0 | AI-powered model shot generation for fashion | `clawhub install miaoji-model-shot` |
-| `miaoji-bid-guard` | 1.0.0 | PPC bid management and protection automation | `clawhub install miaoji-bid-guard` |
+| `miaoji-compliance-copy` | 1.1.0 | Generate compliant product descriptions for cross-border | `clawhub install miaoji-compliance-copy` |
+| `miaoji-scene-studio` | 1.1.0 | Create lifestyle product photography scenes | `clawhub install miaoji-scene-studio` |
+| `miaoji-video-script` | 1.1.0 | Generate viral TikTok/Reels video scripts | `clawhub install miaoji-video-script` |
+| `miaoji-model-shot` | 1.1.0 | AI-powered model shot generation for fashion | `clawhub install miaoji-model-shot` |
+| `miaoji-bid-guard` | 1.1.0 | PPC bid management and protection automation | `clawhub install miaoji-bid-guard` |
+| `miaoji-asin-clinic` | 1.1.0 | ASIN health diagnostics and listing optimization | `clawhub install miaoji-asin-clinic` |
 
 ### 🛡️ Compliance (1 skill)
 
@@ -80,7 +81,8 @@ clawhub-skills/
 │   │   ├── miaoji-scene-studio/
 │   │   ├── miaoji-video-script/
 │   │   ├── miaoji-model-shot/
-│   │   └── miaoji-bid-guard/
+│   │   ├── miaoji-bid-guard/
+│   │   └── miaoji-asin-clinic/
 │   ├── compliance/          # Compliance & reverse engineering
 │   │   └── reverse-compliance/
 │   └── enterprise/          # Enterprise-grade solutions

@@ -127,3 +127,17 @@ no text overlay, authentic TikTok aesthetic"
 ## 场景模板参考
 
 详见 `references/scene-templates.md`
+
+
+## 不适用场景
+
+本技能不适用于以下情况：
+- 需要实际生成图片（本技能只生成AI绘图提示词，不生成图片）
+- 纯品牌情绪板设计（需专业的品牌设计工具）
+- 视频内容创作（需视频脚本和剪辑工具）
+
+## 相关技能推荐
+
+- **miaoji-video-script**：场景图提示词生成后可快速转化为视频脚本
+- **miaoji-model-shot**：场景图中的人物模特方案补充
+- **miaoji-asin-clinic**：一站式体检，定位视觉问题
