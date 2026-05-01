@@ -245,3 +245,23 @@ metadata:
 - **基础版 ¥599/月**：选品/Listing/广告/库存/定价策略建议（5个核心维度）
 - **专业版 ¥2999/月**：+评论/品牌/数据/客服/合规（15个维度）
 - **企业版 ¥29999/月**：全部20个维度 + 定制开发咨询 + 专属支持
+
+---
+
+## 不适用场景
+
+本技能为亚马逊运营策略顾问框架，以下场景不适用：
+
+- 非亚马逊平台运营（如独立站、eBay等，运营逻辑差异较大）
+- 需要实时数据连接或自动化操作（本技能仅提供策略建议，不涉及任何数据连接）
+- 单一问题深度优化（如仅需广告优化，请用amazon-ads-optimizer或miaoji-bid-guard）
+- 需要代替人工决策（本技能辅助决策，所有建议需用户自行判断）
+
+---
+
+## 相关技能推荐
+
+- **amazon-listing-doctor**：ops-agents识别Listing问题后，listing-doctor可做深度五维诊断
+- **amazon-ads-optimizer**：ops-agents给出广告方向后，ads-optimizer提供精细策略建议
+- **miaoji-asin-clinic**：ops-agents发现ASIN层面问题时，asin-clinic做五维体检
+- **amazon-review-advisor**：ops-agents发现评论问题时，review-advisor提供应对方案

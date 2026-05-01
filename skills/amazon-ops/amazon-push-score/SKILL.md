@@ -200,3 +200,23 @@ After completing amazon-push-score workflow:
 - [ ] 优化建议针对得分最低的维度
 - [ ] 行业基准值对比已完成
 - [ ] 优化策略可执行、有优先级
+
+---
+
+## 不适用场景
+
+本技能专注于亚马逊A9算法推送评分系统，以下场景不适用：
+
+- 非亚马逊平台的流量评分（各平台算法差异较大）
+- 需要实时算法数据（本技能基于用户提供的指标做评估，不连接任何平台数据）
+- 广告出价策略（请用amazon-ads-optimizer或miaoji-bid-guard）
+- Listing文案优化（请用amazon-listing-doctor）
+
+---
+
+## 相关技能推荐
+
+- **amazon-listing-doctor**：push-score识别CTR/CVR短板后，listing-doctor帮助优化文案提升转化
+- **amazon-ads-optimizer**：push-score识别流量问题后，ads-optimizer帮助优化广告策略
+- **miaoji-asin-clinic**：push-score是快速评分，asin-clinic是深度诊断，两者互补
+- **amazon-rufus-optimizer**：推送评分不含Rufus维度，rufus-optimizer补充AI导购优化
