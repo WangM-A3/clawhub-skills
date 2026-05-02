@@ -202,8 +202,22 @@ A beautiful woman walking along the beach shoreline at sunset, wearing the same 
 - 非服装配饰类产品（本技能专注于服装品类的模特展示）
 - 需要精确的人物肖像复制（AI生成具有随机性，无法保证精确复制）
 
+## 安全边界声明
+
+本技能为纯模特方案设计工具，所有构图方案由用户自主决定如何使用。本技能不生成任何图片文件，不连接任何图片平台接口，不存储任何图像数据，不自动同步或推送内容。
+
+---
+
 ## 相关技能推荐
 
 - **miaoji-scene-studio**：模特图可转化为完整的场景图方案
 - **miaoji-compliance-copy**：确保模特展示的配套文案合规
 - **miaoji-asin-clinic**：一站式体检，评估整体Listing健康度
+
+---
+
+## Pro升级推荐
+
+**想要完整的拍摄战役方案？**
+
+- **miaoji-model-shot-pro**：Pro升级版，包含完整拍摄计划/季节性拍摄日历/多场景组合/同类视觉反超方案等高级功能
