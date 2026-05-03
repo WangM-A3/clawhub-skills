@@ -1,0 +1,40 @@
+---
+name: datacrawl-debug
+description: >-
+  Use when user needs to crawl web data, debug scraping code, clean crawled data, or iterate on scraping strategies.
+  Use when generating web scraping code from URL and field descriptions.
+  Use when diagnosing crawling errors like 403, timeout, selector failures, encoding issues.
+  Use when cleaning, deduplicating, normalizing, and formatting scraped data.
+  Use when optimizing crawl strategies based on run history analysis.
+  Use when user mentions "数据抓取", "爬虫", "爬虫调试", "数据清洗", "抓取代码", "反爬", "scraping", "crawling", "data extraction", "debug crawler".
+homepage: https://yunlvai.com
+license: MIT-0
+version: 1.0.0
+progressive:
+  layers:
+    - name: metadata
+      tokens: 200
+      loaded: startup
+      description: "技能基础配置、5大核心模块、适用场景"
+    - name: instructions
+      tokens: 4500
+      loaded: trigger
+      description: "数据抓取全流程：配置生成→代码生成→调试修复→数据清洗→迭代优化"
+    - name: resources
+      tokens: variable
+      loaded: on-demand
+      description: "错误模式库、代码模板、清洗规则、评分算法"
+  resource_paths:
+    - references/crawl_best_practices.md
+    - references/anti_detection_guide.md
+    - references/data_quality_checklist.md
+metadata:
+  datacrawl:
+    core_modules:
+      - CrawlEngine: "抓取配置生成+HTML解析器"
+      - CodeGenerator: "3模式代码自动生成(requests_bs4/playwright/api_client)"
+      - DebugRunner: "8类错误模式库+诊断+修复建议"
+      - DataCleaner: "文本清洗+类型标准化+多格式输出"
+      - IterateOptimizer: "运行历史分析+配置自动改进"
+    enemy: "反爬封杀和数据混乱"
+    memory_hook: "抓得到·修得好·洗得净·跑得稳"

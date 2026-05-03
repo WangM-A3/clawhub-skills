@@ -1,0 +1,75 @@
+name: yunlv-email-writer
+version: 1.0.0
+license: MIT-0
+type: openclaw-skill
+description: Use when user needs to write professional business emails in multiple
+  languages. Use when drafting foreign trade emails such as inquiry replies, quotation
+  emails, or follow-up messages. Use when generating personalized B2B email sequences
+  for international clients. Use when user mentions "邮件撰写", "外贸邮件", "多语言邮件", "开发信",
+  "询盘回复", "报价邮件", "跟进邮件", "商务邮件".
+emoji: 🤖
+homepage: https://yunlvai.com
+publisher:
+  name: 云旅AI团队
+  website: https://yunlvai.com
+required_env:
+- TRADEGPT_API_KEY
+- EMAIL_API_KEY
+primary_env: TRADEGPT_API_KEY
+apis:
+- name: 云旅AI TradeGPT API
+  url: https://api.yunlvai.com
+  purpose: 多语言外贸邮件内容生成
+  auth: Bearer Token (TRADEGPT_API_KEY)
+- name: SMTP/Email API
+  url: (用户自配置)
+  purpose: 邮件发送
+  auth: 用户自配置
+category: customer-development
+tags:
+- 外贸邮件
+- 商务邮件
+- 多语言
+- 开发信
+- 询盘回复
+- B2B邮件
+- 邮件营销
+- 邮件撰写
+triggers:
+- 邮件撰写
+- 外贸邮件
+- 开发信
+- 询盘回复
+- 报价邮件
+- 多语言邮件
+- 商务邮件
+- 跟进邮件
+- email template
+- B2B email
+- quotation email
+pricing:
+  free:
+    features:
+    - 每天20封邮件生成
+    - 5种语言
+    - 基础模板
+  basic:
+    price: 149
+    currency: CNY
+    period: month
+    features:
+    - 无限邮件生成
+    - 15种语言
+    - 邮件序列
+    - 个性化定制
+    - 语气调整
+  pro:
+    price: 399
+    currency: CNY
+    period: month
+    features:
+    - 自动发送
+    - A/B测试
+    - 回复分析
+    - 智能语气适应
+    - 优先处理队列

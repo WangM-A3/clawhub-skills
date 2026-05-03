@@ -1,0 +1,60 @@
+name: whatsapp-private-domain-ops
+title: WhatsApp全域私域运营技能（合规适配版）
+description: |
+  Meta合规框架内的WhatsApp私域资产高效运营体系。
+  
+  **核心方法论**：三层合规自适应运营——根据账号质量评分实时调节运营强度。
+  
+  **功能覆盖**：
+  - 账号基建与合规底层设计
+  - 五层用户标签体系与全生命周期运营
+  - 三层合规自适应运营体系（平台规则适配/运营节奏优化/自适应质量管理）
+  - AI拟人化运营建议
+  - 数据观察与标准化迭代流程
+  - 合规自检与应急响应预案
+  
+  **适用场景**：跨境电商、出海营销、SCRM运营
+  
+  **安全声明**：纯策略规划工具，不连接WhatsApp API，不自动发送消息。
+version: 1.0.2
+author: Coze Agent
+homepage: https://clawhub.ai
+repository: https://github.com/coze-skill/whatsapp-private-domain-ops
+license: MIT
+tags:
+  - whatsapp
+  - private-domain
+  - compliance
+  - crm
+  - cross-border
+  - marketing
+  - social-commerce
+keywords:
+  - WhatsApp私域运营
+  - 合规营销
+  - 用户生命周期
+  - 账号健康管理
+  - 三层合规体系
+  - 跨境电商
+  - 出海营销
+  - SCRM
+  - 质量评分
+  - Meta Business
+  - WhatsApp Business
+  - 用户分层运营
+  - 消息送达率优化
+  - 举报率控制
+  - AI客服
+  - 拟人化运营
+  - 数据迭代
+  - 运营策略规划
+  - 话术优化
+  - 应急响应
+readme: README.md
+changelog:
+  - version: 1.0.1
+    date: "2026-01-13"
+    changes:
+      - 首发版本，包含账号基建、用户运营、三层合规体系、AI赋能、数据迭代完整框架
+      - 升维重写为合规适配视角
+      - 覆盖八大核心模块

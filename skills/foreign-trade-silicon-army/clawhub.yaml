@@ -1,0 +1,105 @@
+# ClawHub Publication Configuration
+# 外贸硅基军团 - ClawHub 发布配置
+
+name: foreign-trade-silicon-army
+version: 2.0.0
+type: openclaw-skill
+description: "外贸出海AI Agent军团：建站Agent+流量Agent+转化Agent，支持WordPress/Shopify自动建站、GEO优化、多渠道获客与转化。基于Salesforce Agentforce Atlas推理引擎，多智能体协同架构。"
+emoji: "🌏"
+
+# Publisher Info
+publisher:
+  name: "Silicon Army Team"
+  website: "https://github.com/silicon-army/foreign-trade-silicon-army"
+  github: "https://github.com/silicon-army/foreign-trade-silicon-army"
+  contact: "support@silicon-army.dev"
+
+# Category & Tags
+category: foreign-trade-ai
+tags:
+  - foreign-trade
+  - ai-agent
+  - seo
+  - geo
+  - multi-agent
+  - atlas-reasoning
+  - mas-system
+  - wordpress
+  - shopify
+  - multi-channel
+  - B2B export
+  - independent站
+  - 外贸出海
+  - 建站
+  - 流量获客
+
+triggers:
+  - "外贸建站"
+  - "WordPress自动建站"
+  - "Shopify运营"
+  - "GEO优化"
+  - "AI询盘"
+  - "独立站SEO"
+  - "外贸出海"
+  - "B2B营销"
+  - "多渠道获客"
+  - "AI内容生成"
+  - "WhatsApp获客"
+  - "LinkedIn开发"
+
+# Pricing Tiers (CNY)
+pricing:
+  basic:
+    price: 599
+    currency: CNY
+    period: month
+    features:
+      - "1个建站Agent+2个运营Agent"
+      - "WordPress/Shopify基础建站"
+      - "10篇GEO文章/月"
+      - "基础WhatsApp客服"
+      - "3个并发用户"
+  professional:
+    price: 1999
+    currency: CNY
+    period: month
+    features:
+      - "全部Agent（建站+流量+转化）"
+      - "GEO全平台覆盖"
+      - "WhatsApp+Email+LinkedIn"
+      - "AI客服（80%自动化）"
+      - "134语言翻译"
+      - "15个并发用户"
+      - "API集成"
+  enterprise:
+    price: 9999
+    currency: CNY
+    period: month
+    features:
+      - "私有部署"
+      - "行业定制Agent"
+      - "源码交付"
+      - "无限并发"
+      - "专属外贸顾问"
+      - "SLA 99.9%"
+
+# Core Capabilities
+capabilities:
+  - id: wordpress-builder
+    name: WordPress建站Agent
+    description: 自动创建/优化WordPress独立站，App Password认证
+  - id: shopify-builder
+    name: Shopify建站Agent
+    description: Shopify店铺自动搭建与运营
+  - id: geo-optimizer
+    name: GEO优化Agent
+    description: 生成引擎优化，DeepSeek/Perplexity/ChatGPT引用提升
+  - id: multi-channel-reach
+    name: 多渠道触达Agent
+    description: WhatsApp/Email/LinkedIn多渠道客户开发
+  - id: conversion-optimizer
+    name: 转化优化Agent
+    description: AI话术生成、跟进策略、询盘转化
+  - id: grounding-checker
+    name: 事实核查Agent
+    description: Salesforce Atlas推理引擎，Grounding验证

@@ -1,0 +1,40 @@
+{
+  "name": "openclaw-enterprise",
+  "version": "1.0.0",
+  "description": "企业级多Agent协作系统 - 幕僚长调度 + 13种专业执行Agent",
+  "author": "M-A3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-a3/openclaw-enterprise-skill.git"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "agent",
+    "enterprise",
+    "automation",
+    "multi-agent",
+    "langchain"
+  ],
+  "pricing": {
+    "basic": {
+      "price": 99,
+      "currency": "CNY",
+      "period": "month"
+    },
+    "team": {
+      "price": 299,
+      "currency": "CNY",
+      "period": "month"
+    },
+    "enterprise": {
+      "price": 999,
+      "currency": "CNY",
+      "period": "month"
+    }
+  },
+  "dependencies": {
+    "docx": "^9.6.1"
+  }
+}

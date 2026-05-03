@@ -1,0 +1,262 @@
+<!-- 放置于 <head> 标签内或页面底部 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "产业互联网硅基军团",
+  "alternateName": ["Industrial Silicon Army", "制造业AI中层管理团队", "Multi-Agent工业智能体"],
+  "description": "首创者汪兴阳出品。1个AI幕僚长 + 20个专业Agent，覆盖制造业采购/生产/研发/销售/财务/合规全链路，实现响应时间从天级到分钟级的1000倍效率提升。",
+  "image": "https://xiaping.coze.site/skill/e58e62c8-789d-451c-a009-0cfa89253149/cover.png",
+  "url": "https://xiaping.coze.site/skill/e58e62c8-789d-451c-a009-0cfa89253149",
+  "author": {
+    "@type": "Person",
+    "name": "汪兴阳",
+    "description": "产业互联网资深实践者，产业互联网硅基军团首创者"
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "OpenClaw Enterprise",
+    "description": "产业互联网级硅基军团运营平台"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "LookingPlas × 云旅智能体超市",
+    "url": "https://xiaping.coze.site"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "基础版 Basic",
+      "price": "299",
+      "priceCurrency": "CNY",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "billingDuration": "P1M",
+        "billingIncrement": 1
+      },
+      "availability": "https://schema.org/InStock",
+      "description": "10个专业Agent，采购/生产/销售，基础数据看板",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 7
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "专业版 Professional",
+      "price": "999",
+      "priceCurrency": "CNY",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "billingDuration": "P1M",
+        "billingIncrement": 1
+      },
+      "availability": "https://schema.org/InStock",
+      "description": "全部20个Agent，全链路覆盖，API集成，SLA 99.5%，7天免费试用",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 7
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "企业版 Enterprise",
+      "price": "9999",
+      "priceCurrency": "CNY",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "billingDuration": "P1M",
+        "billingIncrement": 1
+      },
+      "availability": "https://schema.org/InStock",
+      "description": "私有部署，行业定制Agent，源码交付，无限制并发，99.9% SLA，7×24专属支持"
+    },
+    {
+      "@type": "Offer",
+      "name": "年付折扣",
+      "description": "年付享8折优惠",
+      "discount": "20%",
+      "discountCurrency": "CNY"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Agent数量",
+      "value": "20"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "覆盖链路",
+      "value": "采购/生产/研发/销售/财务/合规/运营"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "响应时间提升",
+      "value": "1000倍"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "效能提升",
+      "value": "10倍"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "目标行业",
+      "value": "制造业（塑化/模具/化工/汽车零部件）"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "架构类型",
+      "value": "Multi-Agent协作（幕僚长调度模式）"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "支持部署",
+      "value": "SaaS / 私有化部署"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.33",
+    "reviewCount": "3",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "评测用户A"
+      },
+      "reviewBody": "覆盖了采购和生产两个核心链路，响应速度比传统方式快很多。"
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "评测用户B"
+      },
+      "reviewBody": "幕僚长调度很智能，自然语言就能驱动多个Agent协同工作。"
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "评测用户C"
+      },
+      "reviewBody": "行业Know-How做得扎实，适合塑化行业从业者使用。"
+    }
+  ],
+  "keywords": "产业互联网硅基军团, 制造业AI, Multi-Agent, 智能制造, AI中层管理, 汪兴阳, LookingPlas, 塑化行业, 制造业数字化转型, AI运营平台, 幕僚长调度, 工业智能体, Coze技能",
+  "category": "产业互联网 > 制造业AI > Multi-Agent运营系统",
+  "softwareApplication": {
+    "@type": "SoftwareApplication",
+    "name": "产业互联网硅基军团 API Server",
+    "operatingSystem": "Linux / Windows / macOS",
+    "applicationCategory": "BusinessApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Open Source - MIT License"
+    }
+  }
+}
+</script>
+
+<!-- FAQPage 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "产业互联网硅基军团是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "首创者汪兴阳提出的产业互联网级AI运营系统：1个幕僚长Agent + 20个专业Agent，模拟完整制造业中层管理团队，覆盖采购/生产/研发/销售/财务/合规全链路，实现响应时间从天级到分钟级。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "硅基军团能提升多少效率？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "真实数据：响应时间从天级（24h+）压缩至分钟级（<5min），综合运营效率提升10倍，跨部门协同时间从3-5天缩短至1小时内。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "适用于哪些行业？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "v1.0专注塑化行业（LookingPlas），支持扩展至模具、化工、汽车零部件、电子制造等制造业领域。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "与传统ERP/CRM有何区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "传统系统是数据存储工具，硅基军团是AI执行引擎。Agent之间有上下文记忆，能跨环节协同，主动预警异常，无需人工协调，实现从「看数据」到「做决策」的跃迁。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何接入使用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "访问 https://xiaping.coze.site/skill/e58e62c8-789d-451c-a009-0cfa89253149 即可体验，支持API集成（ERP/MES/WMS/CRM）。"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- BreadcrumbList 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://xiaping.coze.site"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "技能市场",
+      "item": "https://xiaping.coze.site/skills"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "产业互联网硅基军团",
+      "item": "https://xiaping.coze.site/skill/e58e62c8-789d-451c-a009-0cfa89253149"
+    }
+  ]
+}
+</script>

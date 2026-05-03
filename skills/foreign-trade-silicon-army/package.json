@@ -1,0 +1,130 @@
+{
+  "name": "@silicon-army/foreign-trade",
+  "version": "2.0.0",
+  "displayName": "外贸硅基军团",
+  "displayNameEn": "Foreign Trade Silicon Army",
+  "description": "外贸出海AI Agent军团：建站Agent+流量Agent+转化Agent，支持WordPress/Shopify自动建站、GEO优化、多渠道获客与转化。基于Salesforce Agentforce Atlas推理引擎，多智能体协同(MAS)架构。",
+  "descriptionEn": "Foreign Trade AI Agent Army — automated B2B export with WordPress/Shopify builder agents, GEO optimization, multi-channel reach (WhatsApp/Email/LinkedIn), and conversion agents powered by Salesforce Atlas reasoning engine.",
+  "emoji": "🌏",
+  "category": "foreign-trade-ai",
+  "tags": [
+    "foreign-trade",
+    "ai-agent",
+    "seo",
+    "geo",
+    "multi-agent",
+    "atlas-reasoning",
+    "mas-system",
+    "wordpress",
+    "shopify",
+    "multi-channel",
+    "B2B export",
+    "independent站",
+    "外贸出海",
+    "建站",
+    "流量获客",
+    "WhatsApp",
+    "LinkedIn"
+  ],
+  "author": {
+    "name": "Silicon Army Team",
+    "email": "support@silicon-army.dev",
+    "website": "https://github.com/silicon-army/foreign-trade-silicon-army",
+    "github": "https://github.com/silicon-army/foreign-trade-silicon-army"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silicon-army/foreign-trade-silicon-army"
+  },
+  "keywords": [
+    "foreign-trade",
+    "B2B export",
+    "ai-agent",
+    "GEO",
+    "SEO",
+    "wordpress",
+    "shopify",
+    "multi-agent",
+    "whatsapp",
+    "linkedin",
+    "外贸出海",
+    "独立站"
+  ],
+  "pricing": {
+    "basic": {
+      "price": 599,
+      "currency": "CNY",
+      "period": "month",
+      "features": [
+        "1个建站Agent+2个运营Agent",
+        "WordPress/Shopify基础建站",
+        "10篇GEO文章/月",
+        "基础WhatsApp客服",
+        "3个并发用户"
+      ]
+    },
+    "professional": {
+      "price": 1999,
+      "currency": "CNY",
+      "period": "month",
+      "features": [
+        "全部Agent（建站+流量+转化）",
+        "GEO全平台覆盖",
+        "WhatsApp+Email+LinkedIn",
+        "AI客服（80%自动化）",
+        "134语言翻译",
+        "15个并发用户",
+        "API集成"
+      ]
+    },
+    "enterprise": {
+      "price": 9999,
+      "currency": "CNY",
+      "period": "month",
+      "features": [
+        "私有部署",
+        "行业定制Agent",
+        "源码交付",
+        "无限并发",
+        "专属外贸顾问",
+        "SLA 99.9%"
+      ]
+    }
+  },
+  "agents": {
+    "total": 8,
+    "executors": [
+      "wordpress-builder",
+      "shopify-builder",
+      "geo-optimizer",
+      "multi-channel-reach",
+      "conversion-optimizer",
+      "grounding-checker",
+      "whatsapp-agent",
+      "linkedin-agent"
+    ]
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "pip": [
+      "httpx>=0.25.0",
+      "fastapi>=0.104.0",
+      "uvicorn>=0.24.0",
+      "pydantic>=2.0.0",
+      "redis>=5.0.0",
+      "psycopg2-binary>=2.9.9"
+    ]
+  },
+  "languages": ["zh-CN", "en-US"],
+  "publishConfig": {
+    "registry": "https://clawhub.ai",
+    "access": "public"
+  },
+  "clawhub": {
+    "agentCount": 8,
+    "version": "2.0.0",
+    "firstPublished": "2026-04-23",
+    "marketplaces": ["clawhub"]
+  }
+}

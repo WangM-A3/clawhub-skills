@@ -1,0 +1,90 @@
+name: openclaw-enterprise
+version: 1.0.0
+description: "企业级多Agent协作系统 - 幕僚长调度 + 13种专业执行Agent"
+author: M-A3
+license: MIT
+homepage: https://openclaw-ai.com
+repository: https://github.com/openclaw/enterprise
+
+# 平台兼容性
+platforms:
+  - openclaw
+  - qbotclaw
+  - clawhub
+
+# 依赖要求
+requirements:
+  python: ">=3.8"
+  memory: "4GB"
+  bins:
+    - python3
+    - pip
+    - curl
+  env:
+    - OPENAI_API_KEY
+
+# 分类
+category: enterprise
+tags:
+  - agent
+  - multi-agent
+  - automation
+  - langchain
+  - enterprise
+  - workflow
+
+# 关键词（用于搜索）
+keywords:
+  - 企业Agent
+  - 多Agent协作
+  - 自动化
+  - 幕僚长
+  - 智能助手
+
+# 截图/图标
+assets:
+  icon: "🦞"
+  screenshots: []
+
+# 发布状态
+status: stable
+release_date: "2026-04-08"
+
+# 定价策略
+pricing:
+  - name: 基础版
+    price: 99
+    currency: CNY
+    period: month
+    description: "单用户 + 13个专业Agent"
+  
+  - name: 团队版
+    price: 299
+    currency: CNY
+    period: month
+    description: "5用户 + 团队协作 + 共享记忆库"
+    recommended: true
+  
+  - name: 企业版
+    price: 999
+    currency: CNY
+    period: month
+    description: "无限用户 + 私有部署 + SLA保障"
+  
+  - name: 定制服务
+    price: 9999
+    currency: CNY
+    period: once
+    description: "定制开发 + 专属培训 + 源码交付"
+
+# 收益预估（参考市场数据）
+revenue_estimate:
+  conservative:
+    monthly_downloads: 50
+    avg_price: 199
+    monthly_revenue: 9950
+  optimistic:
+    monthly_downloads: 200
+    avg_price: 199
+    monthly_revenue: 39800
+  platform_fee: 0.30  # 平台抽成30%

@@ -1,0 +1,602 @@
+{
+  "_comment": "外贸硅基军团 SkillHub 官方元数据 | v1.0.0 | 2026-04-15",
+  "_clawhub_compliance": "符合 ClawHub v2.0 规范，支持中国镜像站、字节Find Skill、腾讯SkillHub同步发布",
+
+  "name": "foreign-trade-silicon-army",
+  "id": "foreign-trade-silicon-army",
+  "version": "2.0.0",
+  "display_name": "外贸硅基军团",
+  "display_name_en": "Foreign Trade Silicon Army",
+  "tagline": "6大AI Agent，外贸出海全自动",
+  "slug": "foreign-trade-silicon-army",
+
+  "author": {
+    "name": "Silicon Army Team",
+    "username": "m-a3",
+    "email": "contact@siliconarmy.io",
+    "github": "https://github.com/silicon-army",
+    "agent_id": "b665c20e-0ae3-4f66-9a1e-ebf081d10aaa"
+  },
+
+  "description": {
+    "zh": "执行型AI Agent军团，外贸出海全自动。6大专业Agent覆盖建站→流量→获客→转化→履约→决策全链路。包含WordPress/Shopify自动建站、GEO AI搜索优化（80%呈现率承诺）、多渠道获客与智能客服。",
+    "en": "Execution-oriented AI Agent Fleet for Foreign Trade. 6 specialized Agents cover the full trade workflow: build → traffic → acquisition → conversion → fulfillment → decision-making. Features WordPress/Shopify auto-build, GEO AI search optimization (80% visibility guarantee), multi-channel lead generation, and 24/7 intelligent customer service.",
+    "short": "外贸AI Agent军团，自动化建站、GEO优化、多渠道获客与转化"
+  },
+
+  "category": {
+    "primary": "business",
+    "secondary": "foreign-trade",
+    "skillhub_native": "business/foreign-trade",
+    "keywords": ["foreign-trade", "ecommerce", "b2b", "ai-agent", "automation"]
+  },
+
+  "tags": [
+    "foreign-trade",
+    "ai-agent",
+    "ecommerce",
+    "b2b",
+    "seo",
+    "geo",
+    "wordpress",
+    "shopify",
+    "multi-channel",
+    "lead-generation",
+    "chatbot",
+    "automation",
+    "social-media",
+    "whatsapp",
+    "facebook",
+    "linkedin"
+  ],
+
+  "version_info": {
+    "current": "1.0.0",
+    "release_date": "2026-04-15",
+    "min_coze_version": "1.0.0",
+    "changelog_url": "https://github.com/silicon-army/foreign-trade-silicon-army/releases/tag/v1.0.0"
+  },
+
+  "pricing": {
+    "model": "freemium",
+    "currency": "USD",
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "price_cn": "免费",
+        "period": "forever",
+        "features": [
+          "WordPress建站（1个站点）",
+          "GEO优化（每月5次）",
+          "基础SEO工具",
+          "社区支持"
+        ],
+        "limits": {
+          "sites": 1,
+          "geo_requests_per_month": 5,
+          "agents": ["build_agent"],
+          "channels": 1
+        }
+      },
+      {
+        "name": "Professional",
+        "price": 49,
+        "price_cn": "¥355/月（约$49）",
+        "period": "monthly",
+        "features": [
+          "WordPress + Shopify建站（5个站点）",
+          "GEO优化（无限次）",
+          "获客Agent（每月50次）",
+          "转化Agent（标准外贸SOP）",
+          "多渠道聚合（3个渠道）",
+          "邮件/WhatsApp/FB集成",
+          "优先邮件支持"
+        ],
+        "limits": {
+          "sites": 5,
+          "geo_requests_per_month": -1,
+          "acquisition_requests_per_month": 50,
+          "agents": ["build_agent", "traffic_agent", "acquisition_agent", "conversion_agent"],
+          "channels": 3
+        },
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": 199,
+        "price_cn": "¥1,440/月（约$199）",
+        "period": "monthly",
+        "features": [
+          "全功能（无限站点）",
+          "80% GEO呈现率承诺（不达标退款）",
+          "获客Agent（无限次）",
+          "转化Agent（高级外贸SOP+企业知识库）",
+          "多渠道聚合（全部渠道）",
+          "MDP商机推进引擎",
+          "专属客户成功经理",
+          "SLA 99.9%可用性保障",
+          "OEM白标定制"
+        ],
+        "limits": {
+          "sites": -1,
+          "geo_requests_per_month": -1,
+          "acquisition_requests_per_month": -1,
+          "agents": ["*"],
+          "channels": -1
+        }
+      }
+    ],
+    "comparison_note": "对比外贸专员年薪¥15万+，Professional版年费仅¥4,260，ROI超过35倍",
+    "guarantee": {
+      "geo_rate": "80% AI搜索呈现率，不达标按比例退款",
+      "trial_days": 7,
+      "refund_policy": "30天无理由退款"
+    }
+  },
+
+  "requirements": {
+    "runtime": {
+      "language": "python",
+      "min_version": "3.10",
+      "os": ["linux", "macos", "windows (WSL2)"]
+    },
+    "network": {
+      "required": true,
+      "domains": [
+        "api.wordpress.org",
+        "*.wordpress.com",
+        "*.myshopify.com",
+        "api.openai.com",
+        "api.deepseek.com",
+        "api.moonshot.cn",
+        "ark.cn-beijing.volces.com"
+      ]
+    },
+    "optional_services": {
+      "redis": {
+        "recommended": false,
+        "default": "sqlite替代",
+        "url_env": "REDIS_URL",
+        "default_value": "redis://localhost:6379/0"
+      },
+      "postgresql": {
+        "recommended": false,
+        "default": "sqlite替代",
+        "url_env": "DATABASE_URL",
+        "default_value": "sqlite:///silicon_army.db"
+      }
+    },
+    "environment_variables": [
+      {
+        "name": "WORDPRESS_SITE_URL",
+        "required": false,
+        "description": "WordPress站点URL（https://example.com）",
+        "example": "https://myexport.com",
+        "tier": "free"
+      },
+      {
+        "name": "WORDPRESS_USERNAME",
+        "required": false,
+        "description": "WordPress用户名（App Password认证用）",
+        "example": "admin",
+        "tier": "free"
+      },
+      {
+        "name": "WORDPRESS_APP_PASSWORD",
+        "required": false,
+        "description": "WordPress应用专用密码（用户→个人资料→应用密码生成）",
+        "example": "xxxx xxxx xxxx xxxx",
+        "tier": "free",
+        "sensitive": true
+      },
+      {
+        "name": "SHOPIFY_DOMAIN",
+        "required": false,
+        "description": "Shopify店铺域名（my-store.myshopify.com）",
+        "example": "my-store.myshopify.com",
+        "tier": "professional"
+      },
+      {
+        "name": "SHOPIFY_ACCESS_TOKEN",
+        "required": false,
+        "description": "Shopify Admin API访问令牌",
+        "example": "shpat_xxxxxxxxxxxxxxxxxxxx",
+        "tier": "professional",
+        "sensitive": true
+      },
+      {
+        "name": "OPENAI_API_KEY",
+        "required": false,
+        "description": "OpenAI API密钥（用于GEO优化和内容生成）",
+        "example": "sk-xxxxxxxxxxxxxxxxxxxxxxxx",
+        "tier": "professional",
+        "sensitive": true,
+        "alternatives": ["ANTHROPIC_API_KEY", "DEEPSEEK_API_KEY", "KIMI_API_KEY"]
+      },
+      {
+        "name": "REDIS_URL",
+        "required": false,
+        "description": "Redis连接URL（任务队列，可选，默认使用SQLite）",
+        "default": "redis://localhost:6379/0",
+        "tier": "enterprise"
+      },
+      {
+        "name": "DATABASE_URL",
+        "required": false,
+        "description": "PostgreSQL连接字符串（可选，默认使用SQLite）",
+        "default": "sqlite:///silicon_army.db",
+        "tier": "enterprise"
+      }
+    ],
+    "dependencies": {
+      "python": {
+        "httpx": ">=0.26.0",
+        "pydantic": ">=2.5.0",
+        "python-dotenv": ">=1.0.0",
+        "aiohttp": ">=3.9.0",
+        "markdown": ">=3.4.0"
+      }
+    }
+  },
+
+  "capabilities": [
+    {
+      "id": "build_agent",
+      "name": "建站Agent",
+      "name_en": "Build Agent",
+      "icon": "🏗️",
+      "description": "WordPress/Shopify 自动建站、页面创建、SEO配置",
+      "tier": "free",
+      "triggers": ["帮我建站", "创建一个新的独立站", "build a new website", "WordPress建站"],
+      "platforms": ["wordpress", "shopify"],
+      "actions": [
+        "create_page",
+        "create_post",
+        "update_seo",
+        "test_connection",
+        "publish_product",
+        "update_theme_settings"
+      ],
+      "output": {
+        "format": "json",
+        "fields": ["page_id", "url", "status", "seo_score"]
+      }
+    },
+    {
+      "id": "traffic_agent",
+      "name": "流量Agent",
+      "name_en": "Traffic Agent",
+      "icon": "📊",
+      "description": "GEO（AI搜索引擎）优化、社媒内容发布、SEO排名提升",
+      "tier": "professional",
+      "triggers": ["GEO优化", "AI搜索优化", "SEO优化", "optimize in ChatGPT", "GEO优化不达标退款"],
+      "platforms": ["openai", "perplexity", "deepseek", "kimi", "facebook", "linkedin", "instagram"],
+      "actions": [
+        "optimize_geo",
+        "diagnose_geo",
+        "publish_content",
+        "schedule_post",
+        "generate_social_content",
+        "geo_score_check"
+      ],
+      "guarantee": "80% AI搜索呈现率，不达标按比例退款",
+      "output": {
+        "format": "json",
+        "fields": ["geo_score", "platforms_presented", "keywords_ranked", "visibility_rate"]
+      }
+    },
+    {
+      "id": "acquisition_agent",
+      "name": "获客Agent",
+      "name_en": "Acquisition Agent",
+      "icon": "🔍",
+      "description": "海关数据、WhatsApp营销、客户背调、精准线索挖掘",
+      "tier": "professional",
+      "triggers": ["获取客户", "挖掘潜在客户", "lead generation", "WhatsApp获客", "海关数据"],
+      "platforms": ["whatsapp", "custom_api", "email"],
+      "actions": [
+        "search_leads",
+        "verify_contact",
+        "background_check",
+        "whatsapp_batch_verify",
+        "customs_data_analysis"
+      ],
+      "output": {
+        "format": "json",
+        "fields": ["leads_count", "leads_quality_score", "conversion_rate_estimate"]
+      }
+    },
+    {
+      "id": "conversion_agent",
+      "name": "转化Agent",
+      "name_en": "Conversion Agent",
+      "icon": "💬",
+      "description": "多渠道消息聚合、智能客服、7×24h自动响应、高情商话术",
+      "tier": "professional",
+      "triggers": ["聚合消息", "多渠道收件箱", "智能客服", "7x24响应", "multi-channel inbox"],
+      "platforms": ["email", "whatsapp", "facebook", "linkedin", "aliexpress"],
+      "actions": [
+        "aggregate_messages",
+        "auto_reply",
+        "intent_detection",
+        "follow_up",
+        "human_handoff",
+        "sop_routing"
+      ],
+      "output": {
+        "format": "json",
+        "fields": ["response_time_ms", "intent_accuracy", "handoff_rate", "satisfaction_score"]
+      }
+    },
+    {
+      "id": "fulfillment_agent",
+      "name": "履约Agent",
+      "name_en": "Fulfillment Agent",
+      "icon": "📦",
+      "description": "订单处理、物流跟踪、报关单据自动化",
+      "tier": "enterprise",
+      "triggers": ["订单处理", "物流跟踪", "报关自动化"],
+      "platforms": ["custom"],
+      "actions": ["process_order", "track_shipment", "generate_customs_docs"]
+    },
+    {
+      "id": "decision_agent",
+      "name": "决策Agent",
+      "name_en": "Decision Agent",
+      "icon": "📈",
+      "description": "MDP商机推进引擎、RL策略自进化、数据驾驶舱",
+      "tier": "enterprise",
+      "triggers": ["商机分析", "决策建议", "数据仪表盘", "MDP商机推进"],
+      "platforms": ["custom"],
+      "actions": [
+        "opportunity_scoring",
+        "next_best_action",
+        "revenue_forecast",
+        "competitor_analysis"
+      ]
+    }
+  ],
+
+  "channels": {
+    "supported": ["wechat", "web", "api", "slack", "discord"],
+    "primary": "web",
+    "deployment_modes": [
+      {
+        "mode": "cloud",
+        "name": "云端托管",
+        "description": "官方托管，开箱即用，自动更新",
+        "infrastructure": "coze-cloud"
+      },
+      {
+        "mode": "self_hosted",
+        "name": "私有部署",
+        "description": "部署到自有服务器，数据完全自主",
+        "requirements": ["Python 3.10+", "Docker", "PostgreSQL", "Redis"]
+      },
+      {
+        "mode": "hybrid",
+        "name": "混合部署",
+        "description": "敏感数据本地处理，AI能力云端调用"
+      }
+    ]
+  },
+
+  "integration": {
+    "mcp_servers": [
+      {
+        "name": "github",
+        "purpose": "GitHub仓库自动化管理、内容发布",
+        "status": "ready",
+        "config_env": "GITHUB_PERSONAL_ACCESS_TOKEN"
+      },
+      {
+        "name": "slack",
+        "purpose": "团队协作通知、商机实时推送",
+        "status": "ready",
+        "config_env": "SLACK_BOT_TOKEN"
+      }
+    ],
+    "cms_connectors": [
+      {
+        "name": "wordpress",
+        "api": "REST API / XML-RPC",
+        "auth": "App Password",
+        "rate_limit": "60 req/min",
+        "status": "stable",
+        "test_cases": 19
+      },
+      {
+        "name": "shopify",
+        "api": "Admin REST API / GraphQL",
+        "auth": "Access Token",
+        "rate_limit": "40 req/min",
+        "status": "stable",
+        "test_cases": 29
+      }
+    ],
+    "llm_providers": [
+      {
+        "name": "OpenAI",
+        "models": ["gpt-4o", "gpt-4o-mini"],
+        "purpose": "GEO优化、内容生成",
+        "required_env": "OPENAI_API_KEY"
+      },
+      {
+        "name": "DeepSeek",
+        "models": ["deepseek-chat"],
+        "purpose": "成本优化的内容生成",
+        "required_env": "DEEPSEEK_API_KEY"
+      },
+      {
+        "name": "Kimi",
+        "models": ["moonshot-v1-128k"],
+        "purpose": "长文本分析、商机研判",
+        "required_env": "KIMI_API_KEY"
+      },
+      {
+        "name": "豆包",
+        "models": ["doubao-pro-32k"],
+        "purpose": "中国区AI搜索优化",
+        "required_env": "DOUBAO_API_KEY"
+      }
+    ]
+  },
+
+  "documentation": {
+    "readme": "https://github.com/silicon-army/foreign-trade-silicon-army/blob/main/README.md",
+    "quickstart": "https://github.com/silicon-army/foreign-trade-silicon-army/blob/main/docs/quickstart.md",
+    "api_reference": "https://github.com/silicon-army/foreign-trade-silicon-army/blob/main/docs/api.md",
+    "changelog": "https://github.com/silicon-army/foreign-trade-silicon-army/releases",
+    "support_email": "support@siliconarmy.io",
+    "community": "https://github.com/silicon-army/foreign-trade-silicon-army/discussions"
+  },
+
+  "metadata": {
+    "openclaw": {
+      "requires": {
+        "env": [
+          "WORDPRESS_SITE_URL",
+          "WORDPRESS_USERNAME",
+          "WORDPRESS_APP_PASSWORD",
+          "SHOPIFY_DOMAIN",
+          "SHOPIFY_ACCESS_TOKEN",
+          "OPENAI_API_KEY"
+        ],
+        "bins": [],
+        "anyBins": [],
+        "config": []
+      },
+      "primaryEnv": "OPENAI_API_KEY",
+      "always": false,
+      "skillKey": "外贸硅基军团",
+      "emoji": "🏭",
+      "homepage": "https://github.com/silicon-army/foreign-trade-silicon-army",
+      "install": []
+    }
+  },
+
+  "publish_targets": [
+    {
+      "platform": "ClawHub",
+      "url": "https://clawhub.ai",
+      "status": "ready",
+      "priority": 1,
+      "deadline": "2026-04-23",
+      "notes": "主战场，配合官方发布活动"
+    },
+    {
+      "platform": "Find Skill (字节)",
+      "url": "https://findskill.volces.com",
+      "status": "ready",
+      "priority": 1,
+      "deadline": "2026-04-23",
+      "notes": "2026-03-18上线，字节生态覆盖"
+    },
+    {
+      "platform": "腾讯SkillHub",
+      "url": "https://skillhub.cloud.tencent.com",
+      "status": "auto_sync",
+      "priority": 2,
+      "notes": "ClawHub发布后自动同步，无需手动操作"
+    },
+    {
+      "platform": "ClawHub中国镜像",
+      "url": "https://mirror-cn.clawhub.com",
+      "status": "auto_sync",
+      "priority": 2,
+      "notes": "2026-04-01上线，支持支付宝/微信"
+    },
+    {
+      "platform": "虾评Skill",
+      "url": "https://xiaping.coze.site",
+      "status": "future",
+      "priority": 3,
+      "notes": "需5条≥4分评测转正后再上架"
+    }
+  ],
+
+  "security": {
+    "secrets": [
+      "WORDPRESS_APP_PASSWORD",
+      "SHOPIFY_ACCESS_TOKEN",
+      "OPENAI_API_KEY"
+    ],
+    "network_whitelist": [
+      "api.wordpress.org",
+      "*.wordpress.com",
+      "*.myshopify.com",
+      "api.openai.com",
+      "api.deepseek.com",
+      "api.moonshot.cn",
+      "ark.cn-beijing.volces.com"
+    ],
+    "audit": {
+      "enabled": true,
+      "log_path": "./security/mcp_audit_logs/",
+      "retention_days": 90
+    },
+    "practices": [
+      "所有凭证通过环境变量注入，不硬编码",
+      "审计日志自动脱敏，不输出凭证",
+      "白名单域名校验（httpx_whitelist）",
+      "速率限制保护（WordPress 60req/min，Shopify 40req/min）"
+    ]
+  },
+
+  "compliance": {
+    "data_privacy": [
+      "不存储用户WordPress/Shopify密码",
+      "API Token仅用于发起请求，不做持久化",
+      "客户数据不出现在日志中"
+    ],
+    "rate_limits": {
+      "wordpress_api": "60 requests/minute",
+      "shopify_api": "40 requests/minute",
+      "openai_api": "遵守OpenAI速率限制"
+    },
+    "license": "MIT",
+    "open_source": true
+  },
+
+  "metrics": {
+    "exported": [
+      "task_completed_total",
+      "task_failed_total",
+      "execution_duration_ms",
+      "wordpress_requests_total",
+      "shopify_requests_total",
+      "geo_optimization_score",
+      "leads_generated_total",
+      "conversion_rate_improvement",
+      "response_time_ms"
+    ],
+    "health_checks": {
+      "wordpress": {
+        "command": "python scripts/wordpress_ops.py --test",
+        "interval_seconds": 60,
+        "timeout_seconds": 10
+      },
+      "shopify": {
+        "command": "python scripts/shopify_ops.py --test",
+        "interval_seconds": 60,
+        "timeout_seconds": 10
+      }
+    }
+  },
+
+  "limits": {
+    "max_concurrent_tasks": 10,
+    "max_content_length": 5242880,
+    "max_file_upload_mb": 5
+  },
+
+  "_validation": {
+    "clawhub_validate_passed": true,
+    "clawsec_scan_passed": true,
+    "skill_test_passed": true,
+    "github_repo_14_days": true,
+    "pricing_consistent": true,
+    "files_text_only": true
+  }
+}
