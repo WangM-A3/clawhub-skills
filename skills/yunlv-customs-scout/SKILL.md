@@ -29,18 +29,17 @@ progressive:
 metadata:
   yunlv:
     homepage: https://yunlvai.com
-    primaryEnv: TRADEGPT_API_KEY
+    primaryEnv: none
     category: customer-development
     subCategory: customs-data-mining
     tags: ["海关数据", "进出口数据", "贸易情报", "竞品客户挖掘", "B2B外贸", "采购商发现"]
     requires:
       env:
-        - TRADEGPT_API_KEY
+        - 
     apis:
-      - name: 云旅AI MatchGPT API
+      - name: 云旅海关数据参考
         url: https://api.yunlvai.com
         purpose: "海关贸易数据查询与智能匹配"
-        auth: Bearer Token (TRADEGPT_API_KEY)
     emoji: "🔍"
     author: "云旅AI团队"
     pricing:
@@ -177,7 +176,7 @@ triggers:
 
 ### 第4步：快捷联系
 
-- **邮件开发信**：基于竞品替代逻辑生成个性化邮件（英文/德文/法文等）
+- **邮件开发信**：基于同行替代逻辑生成个性化邮件（英文/德文/法文等）
 - **WhatsApp消息模板**：针对美国/东南亚市场优先使用WhatsApp
 - **LinkedIn连接**：针对决策人直接发送LinkedIn连接请求
 - **跟进序列**：设置多轮跟进序列（3-7-15天），未读提醒用户
@@ -201,7 +200,7 @@ triggers:
 
 - **海关数据过滤规则**: 见 `references/data_filter_rules.md`（何时读取：需要自定义数据筛选条件时）
 - **客户评分模型**: 见 `references/customer_scoring_model.md`（何时读取：理解评分逻辑或调整权重时）
-- **竞品挖掘联系话术**: 见 `references/outreach_templates.md`（何时读取：生成竞品替代类开发信时）
+- **同行替代联系话术**: 见 `references/outreach_templates.md`（何时读取：生成同行替代类开发信时）
 
 ---
 
@@ -217,7 +216,7 @@ triggers:
 - 决策人信息每周更新，建议重要客户每月复核
 
 ### ⚠️ 联系策略
-- 竞品替代类话术效果最佳，但需确保产品对比数据准确
+- 同行替代类话术效果最佳，但需确保产品对比数据准确
 - 邮件发送遵守GDPR/CAN-SPAM规范
 
 ---
@@ -239,7 +238,7 @@ triggers:
 - 识别 Philips 在欧洲的 156 家活跃客户
 - 其中 23 家采购量超 200 万美元
 - 分析每家的供应商依赖度和可切入角度
-- 生成针对性的竞品替代开发信模板
+- 生成针对性的同行替代开发信模板
 
 ---
 
@@ -260,7 +259,7 @@ triggers:
 - [ ] 确认查询条件精准（产品/竞品/市场三要素至少两项明确）
 - [ ] 验证评分逻辑（4个维度均有数据支撑，非主观臆断）
 - [ ] 确认供应链分析准确（供应商份额之和约等于100%）
-- [ ] 联系话术符合竞品替代逻辑（数据对比准确）
+- [ ] 联系话术符合同行替代逻辑（数据对比准确）
 - [ ] 联系策略符合GDPR/CAN-SPAM规范
 - [ ] 已设置跟进提醒，避免首次联系后无后续
 
@@ -280,12 +279,12 @@ triggers:
 
 ### 数据处理原则
 - **本地处理**：查询条件和企业中转数据仅在本地处理
-- **敏感数据保护**：API密钥和批量联系人数据不写入日志
+- **敏感数据保护**：不记录敏感业务数据
 - **数据时效**：海关数据默认保留近24个月，逾期自动归档
 
 ### 权限边界声明
 - ✅ **允许**：读取 `./skills/yunlv-skills/references/` 下的参考文件
-- ✅ **允许**：调用云旅AI海关数据API获取贸易记录
+- ✅ **允许**：参考海关贸易数据生成分析建议
 - ✅ **允许**：写入 `./data/yunlv-skills/customsScout/leads/` 导出名单
 - ✅ **允许**：通过邮件/WhatsApp/LinkedIn通道联系目标客户（需用户授权）
 - ❌ **禁止**：将海关数据用于销售名单交易或第三方数据服务
